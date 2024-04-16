@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="subtopnav">
+            <ul>
+                <li><a href="#">KepoFlix</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">News & Popular</a></li>
+                <li><a href="#">My List</a></li>
+                <li><a href="#">Browse by Languages</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="main_video">
+    <div class="video-container">
+        <!-- Video -->
+        <video width="100%" height="auto" loop muted id="autoplay" controls preload="auto" autoplay>
+            <source src="/static/main.mp4" type="video/mp4">
+        </video>
+    
+        <!-- Tombol-tombol -->
+        <div class="video-overlay">
+            <div class="play" data-animation-in="fadeInUp" data-delay-in="1.2">
+                <a href="#" class="btn btn-hover iq-button"><i class="fa fa-play mr-3"></i>Play Now</a>
+            </div>
+        </div>
+    </div>
+</section>  
+
+    <section>
+        <h4>Trending Now</h4>
+        <div class="image-container">
+            <div class="prev"><i class="fas fa-chevron-left"></i></div>
+            <div class="next"><i class="fas fa-chevron-right"></i></div>
+            <div class="images">
+                <img src="/static/img/movie1.jpg" alt="Gambar 1">
+                <img src="/static/img/movie2.jpg" alt="Gambar 2">
+                <img src="/static/img/movie3.jpg" alt="Gambar 3">
+                <img src="/static/img/movie4.jpg" alt="Gambar 4">
+                <img src="/static/img/movie5.jpg" alt="Gambar 5">
+                <img src="/static/img/movie6.jpg" alt="Gambar 6">
+                <img src="/static/img/movie7.jpg" alt="Gambar 7">
+                <img src="/static/img/movie8.jpg" alt="Gambar 8">
+                <img src="/static/img/movie9.jpg" alt="Gambar 9">
+                <img src="/static/img/movie10.jpg" alt="Gambar 10">
+            </div>
+        </div>
+    </section>
+    <section> 
+        <!-- Konten -->
+        <form id="recommend-form">
+            <h3>Unlimited Movies, TV, Shows, and More</h3>
+            <p>Watch anywhere, cancel anytime</p>
+            <p>Ready to watch? Search your movie now!</p>
+            <input type="text" id="movie-name" name="movie-name" required placeholder="Search for a movie...">
+            <button type="submit">Recommend</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

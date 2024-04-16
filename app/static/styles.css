@@ -1,0 +1,271 @@
+/* Global reset for default margin and padding */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark mode background color and text color */
+body {
+    background-color: black;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the navbar */
+#subtopnav {
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Styling for the list items in the navbar */
+#subtopnav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center; 
+}
+
+/* Styling for links inside the navbar */
+#subtopnav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+/* Changing link color on hover */
+#subtopnav ul li a:hover {
+    background-color: #444;
+    color: black;
+}
+
+/* Styling for the logo */
+#subtopnav ul li:first-child a {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-right: auto; 
+    padding-left: 20px; 
+    color: #ff4500; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); 
+}
+
+/* Styling for the main section */
+.main {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+/* Styling for the navigation arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the main video section */
+.main_video {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Setting video to absolute position */
+.main_video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Centering content horizontally within forms */
+form {
+    text-align: center;
+}
+
+/* Styling for the submit button */
+button[type="submit"] {
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Changing submit button color on hover */
+button[type="submit"]:hover {
+    background-color: darkred;
+}
+
+/* Styling for input fields */
+input[type="text"] {
+    display: inline-block;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-right: 10px;
+}
+
+/* Styling for h3 and p elements */
+h3, p {
+    text-align: center;
+}
+
+/* Styling for p elements */
+p {
+    font-family: 'Arial', sans-serif;
+    font-weight: 300;
+    color: #999;
+}
+
+#result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    overflow-x: auto;
+    position: relative; /* Mengubah posisi menjadi relatif agar tabel tidak berada di luar aliran dokumen */
+    display: inline-flex;
+    scrollbar-width: none;  /* For Firefox */
+}
+
+tr {
+    background-color: #f2f2f2; /* Warna latar belakang untuk semua baris */
+    color: black; /* Warna teks hitam */
+}
+
+/* Styling for the navigation arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the previous arrow */
+.prev {
+    left: 0;
+}
+
+/* Styling for the next arrow */
+.next {
+    right: 0;
+}
+
+/* Style images */
+.image-container {
+    position: relative; /* Ensure the container is positioned relatively for absolute positioning of arrows */
+    display: flex;
+    overflow-x: auto; /* Make images horizontally scrollable if overflow */
+    text-align: center; 
+    white-space: nowrap; 
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;  /* For Firefox */
+}
+
+.image-container img {
+    display: inline-block;
+    margin: 10px; 
+    width: 200px; 
+    height: auto; 
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.main_video {
+    position: relative; /* Pastikan kontainer video memiliki posisi relatif */
+}
+
+#Whatch {
+    position: absolute;
+    top: 10px; /* Atur jarak dari atas sesuai kebutuhan */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Atur tumpukan tombol di atas video */
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Atur lebar sesuai kebutuhan */
+    height: auto; /* Atur tinggi sesuai kebutuhan */
+}
+
+.video-overlay {
+    position: absolute;
+    bottom: 10px; /* Atur jarak dari bawah sesuai kebutuhan */
+    left: 10px; /* Atur jarak dari kiri sesuai kebutuhan */
+    z-index: 1; /* Pastikan tombol ditampilkan di atas video */
+}
+
+.play {
+    color: red; /* Warna teks tombol menjadi merah */
+    display: flex; /* Menggunakan flexbox untuk mengatur posisi */
+    align-items: center; /* Menyamakan item secara vertikal */
+    margin: 90px 50px;
+}
+
+.play .btn {
+    background-color: red; 
+    border: 2px solid red; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    align-items:center;
+}
+
+.play .btn:hover {
+    background-color: darkred; 
+    border-color: darkred; 
+}
+
+/* Style poster */
+.poster {
+    display: flex;
+    flex-flow: column;
+    align-items: center; 
+    justify-content: flex-start; 
+    white-space: nowrap; 
+    -ms-overflow-style: none; 
+    margin: 10px 0; 
+    -ms-overflow-style: none; 
+    padding: 20px; 
+    scrollbar-width: none; 
+}
+
+/* Hide scrollbar */
+.poster::-webkit-scrollbar {
+    display: none; 
+}
+
+.poster img {
+    margin: 0 10px; 
+    width: 200px; 
+    height: auto; 
+}
+
+.poster img:hover {
+    transform: scale(1.1); 
+}
+
